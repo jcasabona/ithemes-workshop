@@ -1,0 +1,116 @@
+/**Absracted from CodePen **/
+
+/**Generic Columns Styles**/
+.wp-block-columns {
+	display: flex;
+	margin: 20px 0;
+}
+
+.wp-block-column {
+	flex: 1;
+	margin: 0 20px;
+}
+
+@media (max-width: 764px) {
+	.wp-block-columns.has-3-columns {
+		flex-flow: row wrap;
+	}
+
+	.has-3-columns .wp-block-column:first-child {
+		flex-basis: 100%;
+	}
+}
+
+@media (max-width: 478px) {
+	.wp-block-columns.has-3-columns {
+		display: block;
+	}
+
+	.wp-block-column {
+		margin: 20px 0;
+	}
+}
+
+/**Pricing Table  - add .pricing-table class to block **/
+
+.wp-block-columns.pricing-table {
+	display: flex;
+	margin: 10px 0;
+	padding: 10px;
+	background: #EFEFEF;
+	border-radius: 10px;
+}
+
+.wp-block-columns.pricing-table .wp-block-column {
+	border-radius: 10px;
+	flex: 1;
+	margin: 10px;
+	padding: 10px;
+	background: #FFFFFF;
+	border: 1px solid lightblue;
+}
+
+.wp-block-columns.pricing-table .wp-block-column h2, 
+.wp-block-columns.pricing-table .wp-block-column h3,
+.wp-block-columns.pricing-table .wp-block-column p {
+	text-align: center;
+}
+
+.wp-block-columns.pricing-table .wp-block-column ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.wp-block-columns.pricing-table .wp-block-column ul li {
+	padding: 10px;
+	margin: 0;
+}
+
+.wp-block-columns.pricing-table .wp-block-column ul li:nth-child(odd) {
+	background: #EFEFEF;
+}
+
+.wp-block-columns.pricing-table .wp-block-column h3 {
+	background: lightblue;
+	margin: 0;
+	padding: 10px;
+}
+
+.wp-block-columns.pricing-table .wp-block-column:nth-child(2) {
+	transform: scale(1.08);
+	border: 1px solid gold;
+}
+
+.wp-block-columns.pricing-table .wp-block-column:nth-child(2) h3 {
+	margin: 0 -15px;
+	background: gold;
+}
+
+@media (max-width: 764px) {
+	.wp-block-columns.has-3-columns.pricing-table {
+		flex-flow: row wrap;
+	}
+	
+	.wp-block-columns.has-3-columns.pricing-table .wp-block-column {
+		order: 2;
+	}
+
+
+	.wp-block-columns.has-3-columns.pricing-table .wp-block-column:nth-child(2){
+		flex-basis: 100%;
+		order: 1;
+	}
+}
+
+@media (max-width: 478px) {
+
+	.wp-block-columns.has-3-columns.pricing-table .wp-block-column {
+		flex-basis: 100%;
+		margin: 20px 0;
+	}
+	
+	.wp-block-columns.has-3-columns.pricing-table .wp-block-column:nth-child(2) {
+		transform: scale(1)
+	}
+}

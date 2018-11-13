@@ -13,26 +13,77 @@
 */
 
 .entry-content * {
-    max-width: 1200px;
-    margin: 15px auto;
+  max-width: 1200px;
+  margin: 15px auto;
 }
 
-.has-dark_blue-background-color {
-    background-color: #003366;
-  }
-  .has-dark_blue-color {
-    color: #003366;
-  }
-  
-  .has-grey-background-color {
-    background-color: #666666;
-  }
-  .has-grey-color {
-    color: #666666;
-  }
-  .has-white-background-color {
-    background-color: #ffffff;
-  }
-  .has-white-color {
-    color: #ffffff;
-  }
+.has-dark-blue-background-color {
+  background-color: #003366;
+}
+
+.wp-block-button.secondary a.has-dark-blue-background-color {
+  border-bottom: 3px #003366 solid;
+}
+
+.has-dark-blue-color {
+  color: #003366;
+}
+
+.has-grey-background-color {
+  background-color: #666666;
+}
+
+.has-grey-color {
+  color: #666666;
+}
+
+.has-white-background-color {
+  background-color: #ffffff;
+}
+.has-white-color {
+  color: #ffffff;
+}
+
+/** Custom Gutenberg Block CSS **/
+
+
+/** Tables **/
+.entry-content .wp-block-table.alignwide {
+  margin: 20px auto;
+}
+
+.table-alt,
+.wp-block-table.table-alt {
+  background: #333333;
+  border-color: #999999;
+  color: #ffffff;
+}
+
+/** Paragraph Styles **/
+.alert {
+  background: #AA0000;
+  color: #FFFFFF;
+  padding: 10px;
+  text-align: center;
+}
+
+.alert:before {
+  content: '!!!';
+}
+
+/** Button Styles **/
+.wp-block-button.secondary a.wp-block-button__link {
+  background: transparent !important;
+  border-bottom: 3px #cf2e2e solid;
+  color: #333333;
+}
+
+/**Columns**/
+.entry-content .wp-block-columns.alignwide.has-3-columns {
+  background: url('https://images.unsplash.com/photo-1540202404-d0c7fe46a087?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6edfebe98a9c2c83f02a1be8d0aa37d3&auto=format&fit=crop&w=2990&q=80') rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+.wp-block-columns.alignwide.has-3-columns .wp-block-column {
+  margin: 20px;
+}
