@@ -1,0 +1,38 @@
+/*
+ Theme Name:   Astra Child
+ Theme URI:    https:creatorcourses.com/
+ Description:  iThemes Workshop Demo
+ Author:       Joe Casabona
+ Author URI:   https://casabona.org
+ Template:     astra
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  ithemes-gb
+*/
+
+.entry-content * {
+    max-width: 1200px;
+    margin: 15px auto;
+}
+
+.has-dark_blue-background-color {
+    background-color: #003366;
+  }
+  .has-dark_blue-color {
+    color: #003366;
+  }
+  
+  .has-grey-background-color {
+    background-color: #666666;
+  }
+  .has-grey-color {
+    color: #666666;
+  }
+  .has-white-background-color {
+    background-color: #ffffff;
+  }
+  .has-white-color {
+    color: #ffffff;
+  }
